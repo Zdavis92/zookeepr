@@ -117,6 +117,15 @@
         "hungry"
       ],
       "id": "11"
+    },
+    {
+      "name": "Sasha",
+      "species": "dog",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "12"
     }
   ]
 }

@@ -9,6 +9,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 const {animals} = require('./data/animals.json');
 
+app.use(express.static('public'));
+
 function filterByQyery(query, animalsArray) {
     let personalityTraitsArray = [];
     // Note that we save the animalsArray as filteredResults here:
@@ -111,6 +113,10 @@ app.post('/api/animals', (req, res) => {
         res.json(req.body);   
     }
   });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
