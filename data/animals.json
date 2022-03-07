@@ -113,7 +113,7 @@
       "name": "Larry",
       "species": "lemur",
       "diet": "omnivore",
-      "personalityTrait": [
+      "personalityTraits": [
         "hungry"
       ],
       "id": "11"
